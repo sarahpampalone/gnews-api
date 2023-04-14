@@ -7,7 +7,7 @@ The program should be run in the main.py file.
 # How it works
 The user will be guided step by step through the search process, being prompted by a series of print statements that lead into match or if statements in a specific, detailed manner. 
 Once the selected series of questions conclude, their specifications become parameters to external functions that produce the desired content. 
-Failsafe measures have been taken to ensure that the program does not reach a dead end, and a while loop is implemented in the initial case of an invalid input.
+Failsafe measures have been taken to ensure that the program does not reach a dead end. Examples of these failsafes include while loops to avoid invalid inputs, overloading methodology within match statements, and automatic converting of spaces into URL format.
 
 # Disclosure
 Due to the limitations of the free GNews account, the maximum number of results is 10 articles.
