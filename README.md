@@ -11,4 +11,4 @@ Failsafe measures have been taken to ensure that the program does not reach a de
 
 # Disclosures
 Due to the limitations of the free GNews account, the maximum number of results is 10 articles.
-GNews does not return informations regarding the author, so in replacement I used a method to search by data source.
+GNews does not return informations regarding the author, so I was unable to create a function to search by author.
