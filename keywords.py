@@ -14,6 +14,5 @@ def keyword(key, num):
         articles = data["articles"]
 
         for i in range(len(articles)):
-            print(f"\n{articles[i]['title']}")   # articles[i].title
+            print(f"\n{i+1}. {articles[i]['title']}")   # articles[i].title
             print(f"{articles[i]['description']}")   # articles[i].description
-            # You can replace {property} below with any of the article properties returned by the API
