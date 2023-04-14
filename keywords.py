@@ -1,18 +1,13 @@
 from functools import cache
 
 @cache
-def keyword(key):
-    # https://docs.python.org/3/library/json.html
-    # This library will be used to parse the JSON data returned by the API.
-    import json
-    # https://docs.python.org/3/library/urllib.request.html#module-urllib.request
-    # This library will be used to fetch the API.
-    import urllib.request
+def keyword(key, num):
+    import json   # This library will be used to parse the JSON data returned by the API.
+    import urllib.request   # This library will be used to fetch the API.
 
     apikey = "79c76560c3197501d56bf153b6bf5eb1"
-    #key='Star Wars Jedi'
     search = key.replace(" ", "+" )
-    url = f"https://gnews.io/api/v4/search?q={search}&lang=en&country=us&max=10&apikey={apikey}"
+    url = f"https://gnews.io/api/v4/search?q={search}&lang=en&country=us&max={num}&apikey={apikey}"
 
     with urllib.request.urlopen(url) as response:
         data = json.loads(response.read().decode("utf-8"))
