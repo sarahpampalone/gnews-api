@@ -9,5 +9,6 @@ The user will be guided step by step through the search process, being prompted 
 Once the selected series of questions conclude, their specifications become parameters to external functions that produce the desired content. 
 Failsafe measures have been taken to ensure that the program does not reach a dead end. Examples of these failsafes include while loops to avoid invalid inputs, overloading methodology within match statements, and automatic converting of spaces into URL format.
 
-# Disclosure
+# Disclosures
 Due to the limitations of the free GNews account, the maximum number of results is 10 articles.
+GNews does not return informations regarding the author, so in replacement I used a method to search by data source.
